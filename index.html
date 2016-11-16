@@ -14,9 +14,9 @@
 
 		<link href="assets/css/style.css" rel="stylesheet" />
 	</head>
-	<body data-spy="scroll">
+	<body data-spy="scroll" data-offset="50">
 		<header id="header">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -31,10 +31,10 @@
 					<div id="navbar-menu" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav">
 							<li class="active" >
-								<a href="#col-tn">Link <span class="sr-only">(current)</span></a>
+								<a href="#col-tn">Col tn</a>
 							</li>
 							<li>
-								<a href="#">Link</a>
+								<a href="#pull-classes">Pull</a>
 							</li>
 						</ul>
 						<form class="navbar-form navbar-left">
@@ -54,29 +54,76 @@
 		<div class="container">
 			<section id="col-tn" class="row">
 				<h2>Screen size <code>tn</code></h2>
-				<h4 class="text-italic"><em>Grid view:</em></h4>
+				<h4><em>Grid view:</em></h4>
 				<p>
 					<code>.col-tn-#</code> screen size <mark>≥480px</mark>	
 				</p>
 				<div class="bs-example">
 					<div class="col-tn-10">.col-tn-10</div>
 					<div class="col-tn-2">.col-tn-2</div>
-					<div class="col-tn-6 hidden-xs">.col-tn-6</div>
+					<div class="col-tn-3">.col-tn-3</div>
 					<div class="col-tn-6">.col-tn-6</div>
+					<div class="col-tn-3">.col-tn-3</div>
 					<div class="col-tn-4">.col-tn-4</div>
 					<div class="col-tn-8">.col-tn-8</div>
 				</div>
-				<h4 class="text-italic"><em>Visibility:</em></h4>
+				<h4><em>Visibility:</em></h4>
 				<ul>
 					<li><code>.hidden-tn</code></li>
 					<li>
 						<code>.visible-tn-block</code>
 					</li>
 					<li>
+						<code>.visible-tn-flex</code>
+					</li>
+					<li>
 						<code>.visible-tn-inline</code>
 					</li>
 					<li>
 						<code>.visible-tn-inline-block</code>
+					</li>
+				</ul>
+			</section>
+			<hr>
+			<section id="pull-classes" class="row">
+				<h2>Float elements</h2>
+				<p>
+					<code>.pull-left</code> and <code>.pull-right</code> with screen sizes
+				</p>
+				<h4><em>Pull left</em></h4>
+				<ul>
+					<li>
+						<code>.pull-left-tn</code>
+					</li>
+					<li>
+						<code>.pull-left-xs</code>
+					</li>
+					<li>
+						<code>.pull-left-sm</code>
+					</li>
+					<li>
+						<code>.pull-left-md</code>
+					</li>
+					<li>
+						<code>.pull-left-lg</code>
+					</li>
+				</ul>
+				<h4><em>Pull right</em></h4>
+				<ul>
+					<li>
+						<code>.pull-right-tn</code>
+					</li>
+					<li>
+						<code>.pull-right-xs</code>
+					</li>
+					<li>
+						<code>.pull-right-sm</code>
+					</li>
+					<li>
+						<code>.pull-right-md</code>
+					</li>
+					<li>
+						<code>.pull-right-lg</code>
 					</li>
 				</ul>
 			</section>
