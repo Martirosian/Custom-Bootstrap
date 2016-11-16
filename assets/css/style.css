@@ -4947,6 +4947,9 @@ button.close {
 @-ms-viewport {
   width: device-width; }
 
+.visible-tn {
+  display: none !important; }
+
 .visible-xs {
   display: none !important; }
 
@@ -4959,6 +4962,9 @@ button.close {
 .visible-lg {
   display: none !important; }
 
+.visible-tn-block,
+.visible-tn-inline,
+.visible-tn-inline-block,
 .visible-xs-block,
 .visible-xs-inline,
 .visible-xs-inline-block,
@@ -4973,7 +4979,30 @@ button.close {
 .visible-lg-inline-block {
   display: none !important; }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
+  .visible-tn {
+    display: block !important; }
+  table.visible-tn {
+    display: table !important; }
+  tr.visible-tn {
+    display: table-row !important; }
+  th.visible-tn,
+  td.visible-tn {
+    display: table-cell !important; } }
+
+@media (max-width: 479px) {
+  .visible-tn-block {
+    display: block !important; } }
+
+@media (max-width: 479px) {
+  .visible-tn-inline {
+    display: inline !important; } }
+
+@media (max-width: 479px) {
+  .visible-tn-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
   .visible-xs {
     display: block !important; }
   table.visible-xs {
@@ -4984,15 +5013,15 @@ button.close {
   td.visible-xs {
     display: table-cell !important; } }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .visible-xs-block {
     display: block !important; } }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .visible-xs-inline {
     display: inline !important; } }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .visible-xs-inline-block {
     display: inline-block !important; } }
 
@@ -5065,7 +5094,11 @@ button.close {
   .visible-lg-inline-block {
     display: inline-block !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
+  .hidden-tn {
+    display: none !important; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
   .hidden-xs {
     display: none !important; } }
 
@@ -5117,5 +5150,11 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-body {
-  background-color: green; }
+[class*="col-"] {
+  background-color: #337ab7;
+  border: 3px solid #115895;
+  height: 50px;
+  line-height: 45px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center; }

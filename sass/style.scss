@@ -1,12 +1,18 @@
 @import "_bootstrap";
 
 
-// -- SCSS VARIABLES --
 
-
-
-// -- MEDIA QUERIES --
 
 body{
 
+}
+
+[class*="col-"]{
+	background-color: $brand-primary;
+	border: 3px solid $brand-primary - #222222;
+	height: 50px;
+	line-height: 45px;
+	margin-bottom: 15px;
+	color: white;
+	text-align: center;
 }
