@@ -1,11 +1,11 @@
 Custom Bootstrap with additional features (Still in progress)
 
 Screen size tn
+
 Grid view:
 
 .col-tn-# screen size ≥480px
 
-.col-tn-10.col-tn-2.col-tn-3.col-tn-6.col-tn-3.col-tn-4.col-tn-8
 Visibility:
 
 .hidden-tn
@@ -16,14 +16,15 @@ Visibility:
 Float elements
 .pull-left and .pull-right with screen sizes
 
-Pull left
+Pull left:
 
 .pull-left-tn
 .pull-left-xs
 .pull-left-sm
 .pull-left-md
 .pull-left-lg
-Pull right
+
+Pull right:
 
 .pull-right-tn
 .pull-right-xs
